@@ -42,7 +42,7 @@ export default function Navlogin(){
 
                 <div className="flex items-center xl:w-20 justify-center ">
                     <div className="xl:w-6 xl:h-6 rounded-full overflow-hidden">
-                        <img src="/public/amerika.jpg" alt="" className="object-cover w-full h-full" />
+                        <img src="public/amerika.jpg" alt="" className="object-cover w-full h-full" />
                     </div>
                     <MdKeyboardArrowDown className="text-2xl text-dark"/>
                 </div>
