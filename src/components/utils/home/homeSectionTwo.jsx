@@ -6,8 +6,8 @@ import { AiOutlineSafety } from "react-icons/ai";
 export default function Hometwo(){
     return(
         <>
-            <div className="w-full h-dvh px-5 pt-5 xl:items-center flex flex-col">
-                <div className="bg-slate-100 font-semibold text-dark w-full h-60 -translate-y-16 rounded-lg xl:hidden">
+            <div className="w-full h-dvh px-5  xl:items-center flex flex-col">
+                <div className="bg-slate-100 font-semibold text-dark w-full h-60 rounded-lg xl:hidden">
                     <div className="w-full h-[33%] justify-between flex items-center px-5  border-b">
                         <div className="flex items-center gap-1">
                             <GiTakeMyMoney className="text-3xl"/><p>Money back guaranteed</p>
