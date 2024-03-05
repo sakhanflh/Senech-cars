@@ -34,11 +34,11 @@ export default function Homeone(){
                             <div className="w-[48%] h-full flex flex-col justify-around">
                                 {/* 1 */}
                                 <div className="w-full h-10 flex rounded-lg border">
-                                    <button className=" w-full flex items-center justify-between px-2"><p>Make</p><MdKeyboardArrowDown/></button>
+                                    <button className=" w-full flex items-center justify-between px-2"><p>Choose model</p><MdKeyboardArrowDown/></button>
                                 </div>
                                 {/* 2 */}
                                 <div className="w-full h-10 flex rounded-lg border">
-                                    <button className=" w-full flex items-center justify-between px-2"><p>Mileage</p><MdKeyboardArrowDown/></button>
+                                    <button className=" w-full flex items-center justify-between px-2"><p>Registration from</p><MdKeyboardArrowDown/></button>
                                 </div>
                                 {/* 3 */}
                                 <div className="w-full h-10 flex items-center gap-2">
@@ -60,7 +60,7 @@ export default function Homeone(){
                         </div>
                     </div>
                     {/* Stars */}
-                    <div className=" w-full h-16 text-2xl -translate-y-10 flex items-center justify-center gap-2 text-white xl:w-96 xl:-translate-y-[33rem] xl:translate-x-52">
+                    <div className=" w-full h-16 xl:text-2xl -translate-y-10 flex items-center justify-center gap-2 text-white xl:w-96 xl:-translate-y-[33rem] xl:translate-x-52">
                         <p>4.8</p>
                         <span className="flex items-center text-extra"><FaStar/><FaStar/><FaStar/><FaStar/><FaRegStarHalfStroke/></span>
                         <p className="flex items-center hover:border-b">1320 reviews <MdKeyboardArrowRight/></p>
