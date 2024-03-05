@@ -10,7 +10,7 @@ export function Leftbar({onShowLeftbar}){
 
     return(
         <>
-        <div className={onShowLeftbar ? "absolute bg-white w-60 h-[38rem] translate-y-[335px] -translate-x-3 transition-all duration-500" : "absolute bg-red-50 w-60 h-[38rem] translate-y-[335px] -translate-x-96 transition-all duration-500"}>
+        <div className={onShowLeftbar ? "z-50 absolute bg-white w-60 h-[38rem] translate-y-[335px] -translate-x-3 transition-all duration-500" : "absolute bg-red-50 w-60 h-[38rem] translate-y-[335px] -translate-x-96 transition-all duration-500 z-50"}>
             <ul className="py-5 text-primary text-xl">
                 <div className="border-l-8 border-dark w-full h-10 items-center flex ">
                     <li className="px-5 text-xl font-semibold">Home</li>
@@ -34,7 +34,7 @@ export function Leftbar({onShowLeftbar}){
             </ul>
                 <div className="w-full h-48 px-5">
                     <div className={showScroll ? "w-full h-full transition-all duration-500 p-5 bg-slate-100 rounded-lg" : "w-full overflow-hidden opacity-0 h-0 p-5 transition-all duration-500 bg-slate-100 rounded-lg"}>
-                        <ul className={showScroll ? "flex flex-col justify-between h-full text-primary text-lg transition-all duration-75" : " flex-col hidden justify-between h-full text-primary text-lg"}>
+                        <ul className={showScroll ? "delay-500  flex flex-col justify-between h-full text-primary text-lg transition-all duration-75" : " flex-col hidden justify-between h-full text-primary text-lg delay-500 "}>
                             <li>CarAudit</li>
                             <li>Delivery</li>
                             <li>Financing</li>
