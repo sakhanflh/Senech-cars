@@ -46,8 +46,6 @@ export default function Navlogin(){
                     </div>
                     <MdKeyboardArrowDown className="text-2xl text-dark"/>
                 </div>
-
-                
             </div>
         </>
     )

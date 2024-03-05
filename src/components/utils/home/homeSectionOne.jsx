@@ -38,7 +38,7 @@ export default function Homeone(){
                                 </div>
                                 {/* 2 */}
                                 <div className="w-full h-10 flex rounded-lg border">
-                                    <button className=" w-full flex items-center justify-between px-2"><p>Registration from</p><MdKeyboardArrowDown/></button>
+                                    <button className=" w-full flex items-center justify-between px-2"><p>Car years</p><MdKeyboardArrowDown/></button>
                                 </div>
                                 {/* 3 */}
                                 <div className="w-full h-10 flex items-center gap-2">
