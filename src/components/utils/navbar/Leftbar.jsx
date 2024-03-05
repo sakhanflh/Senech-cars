@@ -33,8 +33,8 @@ export function Leftbar({onShowLeftbar}){
                 </div>
             </ul>
                 <div className="w-full h-48 px-5">
-                    <div className={showScroll ? "w-full h-full transition-all duration-500 p-5 bg-slate-100 rounded-lg" : "w-full h-0 p-5 transition-all duration-500 bg-slate-100 rounded-lg"}>
-                        <ul className="flex flex-col justify-between h-full text-primary text-lg">
+                    <div className={showScroll ? "w-full h-full transition-all duration-500 p-5 bg-slate-100 rounded-lg" : "w-full overflow-hidden opacity-0 h-0 p-5 transition-all duration-500 bg-slate-100 rounded-lg"}>
+                        <ul className={showScroll ? "flex flex-col justify-between h-full text-primary text-lg transition-all duration-75" : " flex-col hidden justify-between h-full text-primary text-lg"}>
                             <li>CarAudit</li>
                             <li>Delivery</li>
                             <li>Financing</li>

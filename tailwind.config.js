@@ -20,9 +20,7 @@ export default {
         'BlueCar': '#337CCF',
         'RedCar': '#dc2626',
       },
-      
     },
   },
   plugins: [],
 }
-
