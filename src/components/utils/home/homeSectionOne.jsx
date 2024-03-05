@@ -1,19 +1,21 @@
 import { MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";
+import { FaStar } from "react-icons/fa";
+import { FaRegStarHalfStroke } from "react-icons/fa6";
 
 
 export default function Homeone(){
     return(
         <>
-            <div className="w-full h-dvh pt-16">
-                    <div className="w-full h-64 reviewImgMobile xl:reviewImg xl:w-full xl:h-60">
+            <div className="w-full h-dvh pt-16 xl:pt-16">
+                    <div className="w-full h-64 reviewImgMobile xl:reviewImg xl:w-full xl:h-dvh">
                         {/* Img Include bg */}
                     </div>
 
-                <div className="w-full px-5 xl:px-0 ">
-                    <div className="bg-red-50 rounded-lg -translate-y-10 w-full h-[27rem] p-5 flex flex-col justify-around">
-                        <h1 className="text-xl font-semibold text-dark">You choose your car online. We inspect it and deliver it.</h1>
-                        <div className="w-full h-[45%] bg-red-500 flex justify-between">
-                            <div className="w-[48%] h-full bg-yellow-500 flex flex-col justify-around">
+                <div className="w-full px-3 xl:px-0 bgShadowMobile">
+                    <div className="bg-white border rounded-lg -translate-y-12 w-full h-[24rem] p-5 flex flex-col justify-around xl:w-[35rem] xl:h-[23rem] xl:-translate-y-[34rem] xl:translate-x-40">
+                        <h1 className="text-xl font-semibold text-dark xl:text-4xl xl:font-bold">You choose your car online. We inspect it and deliver it.</h1>
+                        <div className="w-full h-[45%] flex justify-between">
+                            <div className="w-[48%] h-full  flex flex-col justify-around">
                                 {/* 1 */}
                                 <div className="w-full h-10 flex rounded-lg border">
                                     <button className=" w-full flex items-center justify-between px-2"><p>Make</p><MdKeyboardArrowDown/></button>
@@ -47,7 +49,7 @@ export default function Homeone(){
                             {/* Right side End */}
                         </div>
 
-                        <div className="w-full h-[25%] bg-green-500">
+                        <div className="w-full h-[25%] ">
                             <div className="w-full h-12 bg-secondary rounded-lg flex items-center justify-center text-white text-lg">
                                 <p>143.593 Offers</p>
                             </div>
@@ -56,6 +58,12 @@ export default function Homeone(){
                                 <p>Advanced search</p><MdKeyboardArrowRight/>
                             </div>
                         </div>
+                    </div>
+                    {/* Stars */}
+                    <div className=" w-full h-16 text-2xl -translate-y-10 flex items-center justify-center gap-2 text-white xl:w-96 xl:-translate-y-[33rem] xl:translate-x-52">
+                        <p>4.8</p>
+                        <span className="flex items-center text-extra"><FaStar/><FaStar/><FaStar/><FaStar/><FaRegStarHalfStroke/></span>
+                        <p className="flex items-center hover:border-b">1320 reviews <MdKeyboardArrowRight/></p>
                     </div>
                 </div>
 
