@@ -31,7 +31,7 @@ export default function Utilityhome(){
                 </div>
                 {/* Mobile End */}
                 {/* Pc */}
-                <div className="w-[70rem] h-40 absolute bg-slate-100 rounded-lg -top-[30rem] hidden xl:flex">
+                <div className="w-[70rem] h-40 absolute bg-slate-100 rounded-lg -top-[2rem] hidden xl:flex">
                     <div className="w-[33%] h-full border-r p-5 flex justify-around relative">
                         <GiTakeMyMoney className=" w-[20%] text-4xl "/>
                         <div className="flex flex-col  w-[75%] gap-2 justify-center">

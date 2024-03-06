@@ -24,16 +24,16 @@ export default function Nav(){
                         </li>
 
                         <div className={`absolute border rounded-md flex bg-white p-3 w-36 h-48 translate-y-32 flex-col justify-between ${isHover ? 'flex' : 'hidden'}`}>
-                            <div className="w-full hover:bg-slate-50 xl:h-[22%] items-center flex rounded-md">
+                            <div className="w-full hover:bg-slate-50 hover:font-medium xl:h-[22%] items-center flex rounded-md">
                                 <p className="pl-3">CarAudit</p>
                             </div>
-                            <div className="w-full hover:bg-slate-50 xl:h-[22%] items-center flex rounded-md">
+                            <div className="w-full hover:bg-slate-50 hover:font-medium xl:h-[22%] items-center flex rounded-md">
                                 <p className="pl-3">Delivery</p>
                             </div>
-                            <div className="w-full hover:bg-slate-50 xl:h-[22%] items-center flex rounded-md">
+                            <div className="w-full hover:bg-slate-50 hover:font-medium xl:h-[22%] items-center flex rounded-md">
                                 <p className="pl-3">Financing</p>
                             </div>
-                            <div className="w-full hover:bg-slate-50 xl:h-[22%] items-center flex rounded-md">
+                            <div className="w-full hover:bg-slate-50 hover:font-medium xl:h-[22%] items-center flex rounded-md">
                                 <p className="pl-3">Warranty</p>
                             </div>
                         </div>
