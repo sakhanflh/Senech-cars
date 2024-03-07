@@ -4,6 +4,7 @@ import { IoMdMenu } from "react-icons/io";
 import { HiOutlineUserCircle } from "react-icons/hi2";
 import { CiHeart } from "react-icons/ci";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Headerm(){
     const [showLeftbar, setShowLeftbar] = useState(false)
@@ -25,7 +26,10 @@ export default function Headerm(){
             </div>
             
             <div className="w-[25%] flex text-3xl gap-5 justify-center text-dark">
-                <CiHeart />  
+                <Link to="/Login">
+                    <CiHeart />  
+                </Link>
+
                 <HiOutlineUserCircle />
             </div>
             <Leftbar onShowLeftbar={showLeftbar}/>
