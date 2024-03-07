@@ -7,7 +7,7 @@ import Utilityhome from "../util/Utilityhome";
 export default function Homeone(){
     return(
         <>
-            <div className="w-full h-dvh pt-16 xl:pt-16 relative">
+            <div className="w-full pt-16 xl:pt-16 relative">
                     <div className="w-full h-64 reviewImgMobile xl:reviewImg xl:w-full xl:h-dvh">
                         {/* Img Include bg */}
                     </div>
