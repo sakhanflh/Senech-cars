@@ -47,7 +47,7 @@ export function Leftbar({onShowLeftbar}){
                     </div>
                 </div>
                 
-            <div className=" border-t-2  gap-5 w-full h-full p-5 text-lg text-primary flex flex-col bg-slate-100 ">
+            <div className=" border-t-2 mt-5 gap-5 w-full h-full p-5 text-lg text-primary flex flex-col bg-slate-100 ">
                 <div className="flex items-center py-4 justify-around w-full ">
                     <p>Dark mode</p>
                     <MdOutlineToggleOff className="text-primary text-3xl"/>
