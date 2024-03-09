@@ -35,7 +35,7 @@ export default function Headerm(){
             </div>
             
             <div className="w-[25%] flex text-3xl gap-5 justify-center text-dark">
-                <CiHeart onClick={handleShowLogin} className="hover:scale-90"/>  
+                <CiHeart onClick={handleShowLogin} className={showLogin ? "scale-90" : "text-3xl"} />  
                 <HiOutlineUserCircle />
             </div>
             <Leftbar onShowLeftbar={showLeftbar}/>
