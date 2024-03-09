@@ -33,11 +33,11 @@ export function Leftbar({onShowLeftbar}){
                 </div>
 
                 <div className="w-full h-10 items-center flex ">
-                    <li className="flex items-center px-5 gap-2" onClick={handleShowScroll}><FaPenToSquare/> Services <MdKeyboardArrowDown/></li>
+                    <li className="flex items-center px-5 gap-2" onClick={handleShowScroll}><FaPenToSquare/> Services <MdKeyboardArrowDown className={showScroll ? "rotate-180 transition-all duration-500" : "rotate-0 transition-all duration-500"}/></li>
                 </div>
             </ul>
                 <div className="w-full h-48 px-5">
-                    <div className={showScroll ? "w-full h-full transition-all duration-500 p-5 bg-slate-100 rounded-lg" : "w-full overflow-hidden opacity-0 h-0 p-5 transition-all duration-500 bg-slate-100 rounded-lg"}>
+                    <div className={showScroll ? "w-full h-full transition-all duration-500 p-5 bg-slate-100 rounded-lg" : "w-full overflow-hidden opacity-0 h-0 p-5 transition-all duration-500 bg-slate-100 rounded-lg "}>
                         <ul className={showScroll ? "delay-500  flex flex-col justify-between h-full text-primary transition-all duration-75" : " flex-col hidden justify-between h-full text-primary delay-500 "}>
                             <li>CarAudit</li>
                             <li>Delivery</li>
