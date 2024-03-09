@@ -16,23 +16,23 @@ export function Leftbar({onShowLeftbar}){
         <>
         <div className={onShowLeftbar ? "font-montserat z-50 absolute bg-white  w-60 h-[47rem] translate-y-[407px] -translate-x-3 transition-all duration-500" : "absolute bg-white w-60 h-[47rem] translate-y-[407px] -translate-x-96 transition-all duration-500 z-50"}>
             <ul className="py-5 text-primary text-lg  flex flex-col gap-5">
-                <div className="border-l-8 border-dark w-full h-10 items-center flex ">
+                <div className="border-l-4 border-dark w-full h-10 items-center flex ">
                     <li className="px-5 font-semibold flex items-center gap-2"><MdHome/> Home</li>
                 </div>
 
-                <div className="border-l-4 w-full h-10 items-center flex">
+                <div className="w-full h-10 items-center flex">
                     <li className="px-5 items-center flex gap-2"><GiTakeMyMoney/> Buy</li>
                 </div>
 
-                <div className="border-l-4 w-full h-10 items-center flex">
+                <div className="w-full h-10 items-center flex">
                     <li className="px-5 items-center flex gap-2"><FaUserGear/> How it works</li>
                 </div>
 
-                <div className="border-l-4 w-full h-10 items-center flex">
+                <div className="w-full h-10 items-center flex">
                     <li className="px-5 items-center flex gap-2"><PiShieldStarFill/> Review</li>
                 </div>
 
-                <div className="border-l-4 w-full h-10 items-center flex ">
+                <div className="w-full h-10 items-center flex ">
                     <li className="flex items-center px-5 gap-2" onClick={handleShowScroll}><FaPenToSquare/> Services <MdKeyboardArrowDown/></li>
                 </div>
             </ul>
