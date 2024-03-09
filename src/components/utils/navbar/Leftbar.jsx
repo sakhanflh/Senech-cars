@@ -10,7 +10,7 @@ export function Leftbar({onShowLeftbar}){
 
     return(
         <>
-        <div className={onShowLeftbar ? "z-50 absolute bg-white w-60 h-[38rem] translate-y-[335px] -translate-x-3 transition-all duration-500" : "absolute bg-red-50 w-60 h-[38rem] translate-y-[335px] -translate-x-96 transition-all duration-500 z-50"}>
+        <div className={onShowLeftbar ? "z-50 absolute bg-white  w-60 h-[47rem] translate-y-[407px] -translate-x-3 transition-all duration-500" : "absolute bg-white w-60 h-[47rem] translate-y-[407px] -translate-x-96 transition-all duration-500 z-50"}>
             <ul className="py-5 text-primary text-xl">
                 <div className="border-l-8 border-dark w-full h-10 items-center flex ">
                     <li className="px-5 text-xl font-semibold">Home</li>

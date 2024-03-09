@@ -4,7 +4,7 @@ import { IoMdMenu } from "react-icons/io";
 import { HiOutlineUserCircle } from "react-icons/hi2";
 import { CiHeart } from "react-icons/ci";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import LoginMobilePage from "./utils/login/LoginMobile";
 
 export default function Headerm(){
     const [showLeftbar, setShowLeftbar] = useState(false)
@@ -12,6 +12,15 @@ export default function Headerm(){
     function handleShowLeftbar(){
         setShowLeftbar(!showLeftbar)
     }
+    // SideBar End
+
+    // Login & Register
+    const [showLogin, setShowLogin] = useState(false)
+    
+    function handleShowLogin(){
+        setShowLogin(!showLogin)
+    }
+    // Login & Register End
 
 
     return(
@@ -26,13 +35,11 @@ export default function Headerm(){
             </div>
             
             <div className="w-[25%] flex text-3xl gap-5 justify-center text-dark">
-                <Link to="/Login">
-                    <CiHeart />  
-                </Link>
-
+                <CiHeart onClick={handleShowLogin}/>  
                 <HiOutlineUserCircle />
             </div>
             <Leftbar onShowLeftbar={showLeftbar}/>
+            <LoginMobilePage onShowLogin={showLogin}/>
         </div>
         </>
     )

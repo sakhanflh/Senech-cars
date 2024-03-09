@@ -10,6 +10,8 @@ export default function HomePage(){
                 <Headerm />
                 <Homeone/>
                 <Hometwo/>
+
+                
             </div>
         </>
     )
