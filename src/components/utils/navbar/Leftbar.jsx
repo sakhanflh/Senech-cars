@@ -15,9 +15,9 @@ export function Leftbar({onShowLeftbar}){
     return(
         <>
         <div className={onShowLeftbar ? "font-montserat z-50 absolute bg-white  w-60 h-[47rem] translate-y-[407px] -translate-x-3 transition-all duration-500" : "absolute bg-white w-60 h-[47rem] translate-y-[407px] -translate-x-96 transition-all duration-500 z-50"}>
-            <ul className="py-5 text-primary text-xl  flex flex-col gap-5">
+            <ul className="py-5 text-primary text-lg  flex flex-col gap-5">
                 <div className="border-l-8 border-dark w-full h-10 items-center flex ">
-                    <li className="px-5 text-xl font-semibold flex items-center gap-2"><MdHome/> Home</li>
+                    <li className="px-5 font-semibold flex items-center gap-2"><MdHome/> Home</li>
                 </div>
 
                 <div className="border-l-4 w-full h-10 items-center flex">
@@ -38,7 +38,7 @@ export function Leftbar({onShowLeftbar}){
             </ul>
                 <div className="w-full h-48 px-5">
                     <div className={showScroll ? "w-full h-full transition-all duration-500 p-5 bg-slate-100 rounded-lg" : "w-full overflow-hidden opacity-0 h-0 p-5 transition-all duration-500 bg-slate-100 rounded-lg"}>
-                        <ul className={showScroll ? "delay-500  flex flex-col justify-between h-full text-primary text-lg transition-all duration-75" : " flex-col hidden justify-between h-full text-primary text-lg delay-500 "}>
+                        <ul className={showScroll ? "delay-500  flex flex-col justify-between h-full text-primary transition-all duration-75" : " flex-col hidden justify-between h-full text-primary delay-500 "}>
                             <li>CarAudit</li>
                             <li>Delivery</li>
                             <li>Financing</li>
@@ -49,7 +49,7 @@ export function Leftbar({onShowLeftbar}){
                 
             <div className=" border-t-2  gap-5 w-full h-full p-5 text-lg text-primary flex flex-col bg-slate-100 ">
                 <div className="flex items-center py-4 justify-around w-full ">
-                    <p className="text-xl">Dark mode</p>
+                    <p>Dark mode</p>
                     <MdOutlineToggleOff className="text-primary text-3xl"/>
                 </div>
 
