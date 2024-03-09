@@ -5,7 +5,7 @@ import { FaFacebook } from "react-icons/fa";
 export default function LoginMobilePage({onShowLogin}){
     return(
         <>
-        <div className={onShowLogin ? "w-full bg-white h-[32rem] translate-y-0 opacity-100 flex absolute text-dark left-0 top-[20rem] transition-all duration-500" : "left-0 top-[23rem] opacity-0 w-full h-[32rem] translate-y-full transition-all duration-500 absolute text-dark"}>
+        <div className={onShowLogin ? "w-full bg-white rounded-2xl h-[32rem] translate-y-0 opacity-100 flex absolute text-dark left-0 top-[20rem] transition-all duration-500" : "left-0 top-[23rem] opacity-0 w-full h-[32rem] translate-y-full transition-all duration-500 absolute text-dark"}>
             <div className=" w-full bg-white overflow-hidden rounded-t-2xl h-[28rem] justify-between flex flex-col">
                 <div className="bg-slate-200 px-5 pt-5 h-[40%] flex flex-col gap-4">
                     <h1 className="text-xl font-semibold">Welcome</h1>
