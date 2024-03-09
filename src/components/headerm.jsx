@@ -27,7 +27,7 @@ export default function Headerm(){
         <>
         <div className="bg-white fixed z-50 flex w-full h-16 xl:hidden px-3 justify-between items-center">
             <div className="w-[25%]">
-                <IoMdMenu className="text-2xl text-dark" onClick={handleShowLeftbar} />
+                <IoMdMenu  className={showLeftbar ? "text-2xl text-dark" : "text-3xl text-dark"} onClick={handleShowLeftbar}/>
             </div>
             
             <div className=" w-[50%] items-center flex justify-center">

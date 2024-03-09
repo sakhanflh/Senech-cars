@@ -53,7 +53,7 @@ export function Leftbar({onShowLeftbar}){
                     <MdOutlineToggleOff className="text-primary text-3xl"/>
                 </div>
 
-                <button className="bg-secondary text-white py-3 w-full justify-center rounded-lg flex items-center">Login</button>
+                <button className="bg-secondary border text-white py-3 w-full justify-center rounded-lg flex items-center">Login</button>
             </div>
         </div>
         </>
