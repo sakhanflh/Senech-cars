@@ -14,7 +14,7 @@ export function Leftbar({onShowLeftbar}){
 
     return(
         <>
-        <div className={onShowLeftbar ? "z-50 absolute bg-white  w-60 h-[47rem] translate-y-[407px] -translate-x-3 transition-all duration-500" : "absolute bg-white w-60 h-[47rem] translate-y-[407px] -translate-x-96 transition-all duration-500 z-50"}>
+        <div className={onShowLeftbar ? "font-montserat z-50 absolute bg-white  w-60 h-[47rem] translate-y-[407px] -translate-x-3 transition-all duration-500" : "absolute bg-white w-60 h-[47rem] translate-y-[407px] -translate-x-96 transition-all duration-500 z-50"}>
             <ul className="py-5 text-primary text-xl  flex flex-col gap-5">
                 <div className="border-l-8 border-dark w-full h-10 items-center flex ">
                     <li className="px-5 text-xl font-semibold flex items-center gap-2"><MdHome/> Home</li>
