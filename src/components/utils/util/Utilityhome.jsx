@@ -30,6 +30,13 @@ export default function Utilityhome(){
                     </div>
                 </div>
                 {/* Mobile End */}
+
+
+
+
+
+
+                
                 {/* Pc */}
                 <div className="w-[70rem] h-40 absolute bg-slate-100 rounded-lg -top-[2rem] hidden xl:flex">
                     <div className="w-[33%] h-full border-r p-5 flex justify-around relative">

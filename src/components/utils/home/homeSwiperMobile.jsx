@@ -4,16 +4,41 @@ import 'swiper/css';
 export default function HomeSwiperMobile(){
     return(
         <Swiper
-            spaceBetween={5}
+            spaceBetween={150}
             slidesPerView={3}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
+            className='flex w-full h-40'
         >
-            <SwiperSlide><img src="/image/CityCar.jpg" alt="" style={{width: 'auto', height: '120px'}}/></SwiperSlide>
-            <SwiperSlide><img src="/image/EstateCar.jpg" alt="" style={{width: 'auto', height: '120px'}}/></SwiperSlide>
-            <SwiperSlide><img src="/image/FamilyCar.jpg" alt="" style={{width: 'auto', height: '120px'}}/></SwiperSlide>
-            <SwiperSlide><img src="/image/SuvCar.jpg" alt="" style={{width: 'auto', height: '120px'}}/></SwiperSlide>
-            <SwiperSlide><img src="/image/SportCar.jpg" alt="" style={{width: 'auto', height: '120px'}}/></SwiperSlide>
+            <SwiperSlide>
+                <div className='w-40 h-full items-center flex justify-center'>
+                    <img src="/image/CityCar.jpg" alt="" className='border-2 rounded-lg'/>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='w-40 h-full items-center flex justify-center'>
+                    <img src="/image/EstateCar.jpg" alt="" className='border-2 rounded-lg'/>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='w-40 h-full items-center flex justify-center'>
+                    <img src="/image/FamilyCar.jpg" alt="" className='border-2 rounded-lg'/>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='w-40 h-full items-center flex justify-center'>
+                    <img src="/image/SuvCar.jpg" alt="" className='border-2 rounded-lg'/>
+                </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <div className='w-40 h-full items-center flex justify-center'>
+                    <img src="/image/SportCar.jpg" alt="" className='border-2 rounded-lg'/>
+                </div>
+            </SwiperSlide>
         </Swiper>
     )
 }
