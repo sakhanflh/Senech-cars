@@ -1,12 +1,14 @@
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 export default function HomeThree() {
     return (
         <>
-            <div className="w-full h-52 px-5 mt-16 flex flex-col">
+            <div className="w-full h-52 px-5 mt-10 flex flex-col clip-triangle justify-center bg-blue-50">
                 <div className="w-full h-auto flex items-center flex-col">
-                    <h1 className="text-2xl font-bold text-dark">How does it work?</h1>
+                    <h1 className="text-2xl font-bold  text-dark">How does it work?</h1>
                 </div>
 
                 <div>
@@ -22,7 +24,7 @@ export default function HomeThree() {
                         className="w-full h-96"
                     >
                         <SwiperSlide>
-                            <div className="flex flex-col items-center justify-center w-full h-full px-5">
+                            <div className="flex flex-col items-center justify-center w-full h-full px-5 gap-3">
                                 <img src="/img/how-it-works-mobile-1-2x.webp" alt="" />
                                 <div className="flex gap-5 justify-center w-full px-5">
                                     <p className="text-secondary font-medium">01.</p>
@@ -35,7 +37,7 @@ export default function HomeThree() {
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <div className="flex flex-col items-center justify-center w-full h-full px-5">
+                            <div className="flex flex-col items-center justify-center w-full h-full px-5 gap-3">
                                 <img src="/img/how-it-works-mobile-2-2x.webp" alt="" />
                                 <div className="flex gap-5 justify-center w-full px-5">
                                     <p className="text-secondary font-medium">02.</p>
@@ -48,7 +50,7 @@ export default function HomeThree() {
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <div className="flex flex-col items-center justify-center w-full h-full px-5">
+                            <div className="flex flex-col items-center justify-center w-full h-full px-5 gap-3">
                                 <img src="/img/how-it-works-mobile-3-2x.webp" alt="" />
                                 <div className="flex gap-5 justify-center w-full px-5">
                                     <p className="text-secondary font-medium">03.</p>
@@ -65,6 +67,12 @@ export default function HomeThree() {
                 <div className="w-full flex justify-center">
                     <button className="py-2 px-6 bg-gradient-to-r to-primary from-tertiary rounded-md font-semibold text-white">Want to know more?</button>
                 </div>
+            </div>
+
+            <div className="w-full px-10 mt-10 flex flex-col items-center gap-5">
+                <h1 className="text-2xl font-bold">A thorough car inspection - CarAudit&trade;</h1>
+                <p>A qualified mechanic will thoroughly inspect your chosen car. You will receive a detailed report about the technical condition of the car, photo documentation, and our advice. You just take your time and decide.</p>
+                <button className="bg-gradient-to-r gap-3 from-secondary to-primary flex items-center justify-center px-5 py-2 text-white rounded-md">More about CarAudit <FaArrowRightLong/></button>
             </div>
         </>
     )

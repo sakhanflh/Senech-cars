@@ -9,7 +9,7 @@ export default function HomeSwiperMobile() {
     return (
         <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={100}
+            spaceBetween={170}
             slidesPerView={3}
             loop={true}
             // navigation
