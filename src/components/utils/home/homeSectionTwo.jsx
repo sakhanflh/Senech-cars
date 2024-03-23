@@ -9,9 +9,9 @@ export default function Hometwo(){
                 <Utilityhome/>
             </div>
 
-            <div>
-                <h1 className="text-2xl font-bold px-5">Popular at Senech Cars</h1>
-                <div className="bg-white w-full h-32">
+            <div className="flex flex-col gap-5">
+                <h1 className="text-2xl font-bold px-5 text-dark">Popular at Senech Cars</h1>
+                <div className="bg-white w-full">
                     <HomeSwiperMobile/>
                 </div>
             </div>

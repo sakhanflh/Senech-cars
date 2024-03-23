@@ -36,5 +36,6 @@
     }
 }
 
-
-
+.bgBlueToWhite {
+    background: linear-gradient(to left, #191D88, #191D88);
+}
