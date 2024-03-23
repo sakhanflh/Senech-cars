@@ -1,13 +1,12 @@
 import { MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
-import Utilityhome from "../util/Utilityhome";
 
 
 export default function Homeone(){
     return(
         <>
-            <div className="w-full pt-16 xl:pt-16 relative">
+            <div className="w-full h-full bg-tertiary bg-opacity-20 xl:bg-white  pt-16 xl:pt-16 relative">
                     <div className="w-full h-64 reviewImgMobile xl:reviewImg xl:w-full xl:h-dvh">
                         {/* Img Include bg */}
                     </div>
@@ -66,9 +65,6 @@ export default function Homeone(){
                         <span className="flex items-center text-extra"><FaStar/><FaStar/><FaStar/><FaStar/><FaRegStarHalfStroke/></span>
                         <p className="flex items-center hover:border-b">1320 reviews <MdKeyboardArrowRight/></p>
                     </div>
-                </div>
-                <div className="-translate-y-8">
-                    <Utilityhome/>
                 </div>
             </div>
         </>
