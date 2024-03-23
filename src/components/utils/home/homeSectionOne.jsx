@@ -67,7 +67,9 @@ export default function Homeone(){
                         <p className="flex items-center hover:border-b">1320 reviews <MdKeyboardArrowRight/></p>
                     </div>
                 </div>
-                <Utilityhome/>
+                <div className="-translate-y-8">
+                    <Utilityhome/>
+                </div>
             </div>
         </>
     )

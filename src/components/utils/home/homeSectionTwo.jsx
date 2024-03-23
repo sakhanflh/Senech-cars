@@ -10,6 +10,10 @@ export default function Hometwo(){
             <div className="bg-white w-full h-32">
                 <HomeSwiperMobile/>
             </div>
+
+            <div>
+                
+            </div>
         </div>
         </>
     )
