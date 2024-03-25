@@ -11,7 +11,7 @@ export default function Nav(){
 
     return(
         <>
-            <div className="flex justify-between xl:w-full xl:h-[70px] items-center border-b">
+            <div className="flex justify-between  lg:h-16 lg:w-full xl:w-full xl:h-16 items-center border-b">
                 <ul className="flex gap-6 text-dark xl:text-base xl:h-full">
                     <li className=" items-center flex hover:border-b font-semibold hover:border-secondary hover:text-secondary">Home</li>
                     <li className=" items-center flex hover:border-b font-semibold hover:border-secondary hover:text-secondary">Buy</li>

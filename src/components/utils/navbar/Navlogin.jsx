@@ -20,7 +20,7 @@ export default function Navlogin(){
                     <PiUserCircleLight className="text-dark text-3xl"/>
                     <p className="xl:text-base font-semibold text-dark">Login</p>
                     <MdKeyboardArrowDown className="text-2xl"/>
-                    <div className={`absolute flex py-5 w-[19rem] h-[28rem] border rounded-md bg-white xl:translate-y-64 xl:-translate-x-12 justify-around flex-col ${isHover ? 'flex' : 'hidden'}`}>
+                    <div className={`absolute flex py-5 w-[19rem] h-[28rem] border rounded-md bg-white xl:translate-y-64 xl:-translate-x-12 lg:translate-y-64 lg:-translate-x-12 justify-around flex-col ${isHover ? 'flex' : 'hidden'}`}>
                     <div className="xl:w-full xl:h-[65%] px-5 border-b ">
                         <div className="flex flex-col gap-4 h-full text-dark">
                             <p className="flex items-center h-[20%] text-lg gap-3 hover:font-medium hover:bg-slate-50 rounded-sm"><CiBookmark className="text-2xl"/> Saved searches</p>
@@ -41,8 +41,8 @@ export default function Navlogin(){
                 </div>
 
                 <div className="flex items-center xl:w-20 justify-center ">
-                    <div className="xl:w-6 xl:h-6 rounded-full overflow-hidden">
-                        <img src="/img/amerika.jpg" alt="" className="object-cover w-full h-full" />
+                    <div className="xl:w-6 xl:h-6 lg:w-6 lg:h-6 rounded-full overflow-hidden">
+                        <img src="/img/amerika.jpg" alt="" className="object-cover xl:w-full xl:h-full lg:w-full lg:h-full" />
                     </div>
                     <MdKeyboardArrowDown className="text-2xl text-dark"/>
                 </div>

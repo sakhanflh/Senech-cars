@@ -120,7 +120,7 @@ export function HomeCar2(){
                     <div class="w-[80%] shadow-xl h-[25%] bg-slate-50 rounded-t-md  flex flex-col gap-2 md:w-[60%]">
                         <div class="w-full flex px-4 py-2 gap-2">
                             <div class="w-8 h-8 relative overflow-hidden rounded-full">
-                                <img src="https://www.wikihow.com/images/9/90/What_type_of_person_are_you_quiz_pic.png" alt="" class="absolute w-full h-full"/>
+                                <img src="https://www.wikihow.com/images/9/90/What_type_of_person_are_you_quiz_pic.png" alt="" class="absolute w-full h-full object-cover"/>
                             </div>
                             <div>
                                 <h1 class="text-sm font-semibold">Ming Kheems</h1>
