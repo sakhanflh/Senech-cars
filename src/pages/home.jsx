@@ -1,5 +1,6 @@
 import Header from "../components/header";
 import Headerm from "../components/headerm";
+import HomeFive from "../components/utils/home/homeSectionFive";
 import HomeFour from "../components/utils/home/homeSectionFour";
 import Homeone from "../components/utils/home/homeSectionOne";
 import HomeThree from "../components/utils/home/homeSectionThree";
@@ -14,6 +15,7 @@ export default function HomePage(){
                 <Hometwo/>
                 <HomeThree/>
                 <HomeFour/>
+                <HomeFive />
             </div>
         </>
     )

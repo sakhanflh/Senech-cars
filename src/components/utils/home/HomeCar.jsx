@@ -1,9 +1,9 @@
 export function HomeCar(){
     return(
         <>
-        <div class="w-full h-full flex flex-col items-center justify-center z-10 px-4 pt-10">
+        <div class="w-full h-full flex flex-col items-center justify-center z-10 px-4 pt-10 ">
                     {/* <!-- PROFILE --> */}
-                    <div class="w-[80%] shadow-xl h-[25%] bg-slate-50 rounded-t-md  flex flex-col gap-2 md:w-[60%]">
+                    <div class="w-[80%] shadow-xl h-[25%] bg-slate-50 rounded-t-md  flex flex-col gap-2 md:w-[60%] profil-bg-shadow">
                         <div class="w-full flex px-4 py-2 gap-2">
                             <div class="w-8 h-8 relative overflow-hidden rounded-full">
                                 <img src="/img/profile-pic-2.jpg" alt="" class="absolute w-full"/>
@@ -14,13 +14,13 @@ export function HomeCar(){
                             </div>
                         </div>
                         <div class="w-full text-xs px-4 text-balance">
-                            <q><i> Car in the striking Depok Town Center. Very good condition, technically in perfect order </i></q>
+                            <q><i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam placeat quidem ullam sapiente iure illo. </i></q>
                         </div>
                     </div>
                     {/* <!-- PROFILE --> */}
 
                     {/* <!-- RESULT --> */}
-                    <div class="w-[90%] h-[70%] bg-white shadow-xl rounded-md overflow-hidden md:w-[70%] md:shadow-md">
+                    <div class="w-[90%] h-[70%] bg-white shadow-xl rounded-md overflow-hidden md:w-[70%] md:shadow-md profil-bg-shadow">
                         <div class="w-full h-[25%] border-b-2 flex gap-2 items-center md:h-30%">
                             <div class="w-32 h-full overflow-hidden md:w-44">
                                 <img src="/img/civic-1.jpg" alt=""/>
@@ -38,8 +38,12 @@ export function HomeCar(){
                                     </div>
                                     <p class="text-sm md:text-base">Exterior</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[87%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
+                                    <div className="w-5 h-full rounded-md bg-tertiary"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
                                 </div>
                             </div>
 
@@ -50,8 +54,12 @@ export function HomeCar(){
                                     </div>
                                     <p class="text-sm md:text-base">Interior</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[78%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
+                                    <div className="w-5 h-full rounded-md bg-tertiary"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
                                 </div>
                             </div>
 
@@ -62,8 +70,12 @@ export function HomeCar(){
                                     </div>
                                     <p class="text-sm md:text-base">Engine</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[92%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
                                 </div>
                             </div>
 
@@ -74,8 +86,12 @@ export function HomeCar(){
                                     </div>
                                     <p class="text-sm md:text-base">Wheel</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[100%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
+                                    <div className="w-5 h-full rounded-md bg-tertiary"></div>
                                 </div>
                             </div>
 
@@ -86,8 +102,12 @@ export function HomeCar(){
                                     </div>
                                     <p class="text-sm md:text-base">Testdrive</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[95%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
                                 </div>
                             </div>
 
@@ -128,7 +148,7 @@ export function HomeCar2(){
                             </div>
                         </div>
                         <div class="w-full text-xs px-4 text-balance">
-                            <q><i> Car in the striking Depok Town Center. Very good condition, technically in perfect order </i></q>
+                            <q><i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae facere, culpa eaque itaque exercitationem accusantium! </i></q>
                         </div>
                     </div>
                     {/* <!-- PROFILE --> */}
@@ -152,8 +172,12 @@ export function HomeCar2(){
                                     </div>
                                     <p class="text-sm md:text-base">Exterior</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[70%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
                                 </div>
                             </div>
 
@@ -164,8 +188,12 @@ export function HomeCar2(){
                                     </div>
                                     <p class="text-sm md:text-base">Interior</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[85%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
+                                    <div className="w-5 h-full rounded-md bg-tertiary"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
                                 </div>
                             </div>
 
@@ -176,8 +204,12 @@ export function HomeCar2(){
                                     </div>
                                     <p class="text-sm md:text-base">Engine</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[98%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
+                                    <div className="w-5 h-full rounded-md bg-tertiary"></div>
                                 </div>
                             </div>
 
@@ -188,8 +220,12 @@ export function HomeCar2(){
                                     </div>
                                     <p class="text-sm md:text-base">Wheel</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[90%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
                                 </div>
                             </div>
 
@@ -200,8 +236,12 @@ export function HomeCar2(){
                                     </div>
                                     <p class="text-sm md:text-base">Testdrive</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[80%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
+                                    <div className="w-5 h-full rounded-md bg-tertiary"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
                                 </div>
                             </div>
 
@@ -242,7 +282,7 @@ export function HomeCar3(){
                             </div>
                         </div>
                         <div class="w-full text-xs px-4 text-balance">
-                            <q><i> Car in the striking Depok Town Center. Very good condition, technically in perfect order </i></q>
+                            <q><i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, quis. Lorem ipsum dolor sit amet. </i></q>
                         </div>
                     </div>
                     {/* <!-- PROFILE --> */}
@@ -266,8 +306,12 @@ export function HomeCar3(){
                                     </div>
                                     <p class="text-sm md:text-base">Exterior</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[90%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
+                                    <div className="w-5 h-full rounded-md bg-tertiary"></div>
+                                    <div className="w-5 h-full rounded-md bg-tertiary"></div>
                                 </div>
                             </div>
 
@@ -278,8 +322,12 @@ export function HomeCar3(){
                                     </div>
                                     <p class="text-sm md:text-base">Interior</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[70%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
                                 </div>
                             </div>
 
@@ -290,8 +338,12 @@ export function HomeCar3(){
                                     </div>
                                     <p class="text-sm md:text-base">Engine</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[100%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
+                                    <div className="w-5 h-full rounded-md bg-tertiary"></div>
                                 </div>
                             </div>
 
@@ -302,8 +354,12 @@ export function HomeCar3(){
                                     </div>
                                     <p class="text-sm md:text-base">Wheel</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[100%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-secondary"></div>
+                                    <div className="w-5 h-full rounded-md bg-tertiary"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
                                 </div>
                             </div>
 
@@ -314,8 +370,12 @@ export function HomeCar3(){
                                     </div>
                                     <p class="text-sm md:text-base">Testdrive</p>
                                 </div>
-                                <div class="w-32 h-3 bg-neutral-100 rounded-3xl border-2 ">
-                                    <div class="w-[100%] bg-gradient-to-r from-primary to-tertiary h-full rounded-md"></div>
+                                <div class="w-32 h-3 flex justify-around">
+                                    <div className="w-5 h-full rounded-md bg-dark"></div>
+                                    <div className="w-5 h-full rounded-md bg-primary"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
+                                    <div className="w-5 h-full rounded-md bg-blue-100"></div>
                                 </div>
                             </div>
 

@@ -5,6 +5,7 @@ import { HiOutlineUserCircle } from "react-icons/hi2";
 import { CiHeart } from "react-icons/ci";
 import { useState } from "react";
 import LoginMobilePage from "./utils/login/LoginMobile";
+import { Rightbar } from "./utils/navbar/Rightbar";
 
 export default function Headerm(){
     const [showLeftbar, setShowLeftbar] = useState(false)
@@ -12,7 +13,13 @@ export default function Headerm(){
     function handleShowLeftbar(){
         setShowLeftbar(!showLeftbar)
     }
-    // SideBar End
+    // LeftBar End
+    const [showRightBar, setShowRightBar] = useState(false)
+
+    function handleShowRightBar(){
+        setShowRightBar(!showRightBar)
+    }
+    // RightBar End
 
     // Login & Register
     const [showLogin, setShowLogin] = useState(false)
@@ -36,10 +43,11 @@ export default function Headerm(){
             
             <div className="w-[25%] flex text-3xl gap-5 justify-center text-dark">
                 <CiHeart onClick={handleShowLogin} className={showLogin ? "scale-90" : "text-3xl"} />  
-                <HiOutlineUserCircle />
+                <HiOutlineUserCircle onClick={handleShowRightBar}/>
             </div>
             <Leftbar onShowLeftbar={showLeftbar}/>
             <LoginMobilePage onShowLogin={showLogin}/>
+            <Rightbar onShowRightBar={showRightBar}/>
         </div>
         </>
     )

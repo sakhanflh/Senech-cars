@@ -107,11 +107,6 @@ export default function HomeThree() {
                 </div>
             </div>
 
-            <div className="w-full px-10 mt-10 xl:mt-20 xl:mb-20 flex flex-col items-center gap-5">
-                <h1 className="text-2xl font-bold">A thorough car inspection - CarAudit&trade;</h1>
-                <p>A qualified mechanic will thoroughly inspect your chosen car. You will receive a detailed report about the technical condition of the car, photo documentation, and our advice. You just take your time and decide.</p>
-                <button className="bg-gradient-to-r gap-3 from-secondary to-primary flex items-center justify-center px-5 py-2 text-white rounded-md font-semibold">More about CarAudit <FaArrowRightLong /></button>
-            </div>
         </>
     )
 }

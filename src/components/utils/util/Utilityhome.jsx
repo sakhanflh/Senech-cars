@@ -23,7 +23,7 @@ export function Utilityhome() {
     return (
         <>
             <div className=" w-full px-5 select-none">
-                <div className="flex flex-col bg-blue-50 rounded-lg">
+                <div className="flex flex-col bg-white border-2 rounded-lg">
                     <div className="flex items-center py-8 border-b-2 px-5 flex-col gap-5 text-dark" onClick={handleShowHidden}>
                         <div className="flex items-center justify-between w-full">
                             <div className="flex items-center gap-2">
