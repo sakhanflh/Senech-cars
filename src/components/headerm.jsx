@@ -32,7 +32,7 @@ export default function Headerm(){
 
     return(
         <>
-        <div className="bg-white fixed z-50 flex w-full h-16 lg:hidden xl:hidden 2xl:hidden px-3 justify-between items-center">
+        <div className="bg-white fixed z-50 flex w-full h-16 lg:hidden xl:hidden 2xl:hidden px-3 justify-between items-center border-b shadow-md">
             <div className="w-[25%]">
                 <IoMdMenu  className={showLeftbar ? "text-2xl text-dark transition-all duration-300" : "text-3xl text-dark transition-all duration-300"} onClick={handleShowLeftbar}/>
             </div>

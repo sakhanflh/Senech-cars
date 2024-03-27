@@ -4,6 +4,7 @@ import { MdOutlineToggleOff } from "react-icons/md";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { FaPenToSquare, FaUserGear } from "react-icons/fa6";
 import { PiShieldStarFill } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 export function Leftbar({onShowLeftbar}){
     const [showScroll, setShowScroll] = useState(false)
@@ -17,11 +18,17 @@ export function Leftbar({onShowLeftbar}){
         <div className={onShowLeftbar ? "font-montserat z-50 absolute bg-white  w-60 h-[47rem] translate-y-[407px] -translate-x-3 transition-all duration-500" : "absolute bg-white w-60 h-[47rem] translate-y-[407px] -translate-x-96 transition-all duration-500 z-50"}>
             <ul className="py-5 text-primary text-lg  flex flex-col gap-5">
                 <div className="border-l-4 border-dark w-full h-10 items-center flex ">
-                    <li className="px-5 font-semibold flex items-center gap-2"><MdHome/> Home</li>
+                    <Link to={'/'}>
+                        <li className="px-5 font-semibold flex items-center gap-2">
+                            <MdHome/> Home
+                        </li>
+                    </Link>
                 </div>
 
                 <div className="w-full h-10 items-center flex">
-                    <li className="px-5 items-center flex gap-2"><GiTakeMyMoney/> Buy</li>
+                    <Link to={'/buy'}>
+                        <li className="px-5 items-center flex gap-2"><GiTakeMyMoney/> Buy</li>
+                    </Link>
                 </div>
 
                 <div className="w-full h-10 items-center flex">
