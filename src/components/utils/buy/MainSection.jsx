@@ -14,21 +14,27 @@ export function MainSection() {
         setVerified(VerifiedCarsData)
     }, [])
 
-    const [prevScrollPos, setPrevScrollPos] = useState(0); // State untuk menyimpan posisi scroll sebelumnya
-    const [visible, setVisible] = useState(true); // State untuk menentukan apakah header terlihat atau tidak
+    const [prevScrollPos, setPrevScrollPos] = useState(0); 
+    const [visible, setVisible] = useState(true); 
+
+    // Back to top
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+    // Back to top End
 
     useEffect(() => {
-        // Fungsi untuk menangani perubahan posisi scroll
         const handleScroll = () => {
             const currentScrollPos = window.pageYOffset;
-            setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10); // Menentukan apakah header harus terlihat atau tidak
-            setPrevScrollPos(currentScrollPos); // Memperbarui posisi scroll sebelumnya
+            setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+            setPrevScrollPos(currentScrollPos); 
         };
 
-        // Menambah event listener untuk scroll
         window.addEventListener('scroll', handleScroll);
 
-        // Membersihkan event listener saat komponen tidak lagi digunakan
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -67,7 +73,7 @@ export function MainSection() {
                     ))}
                 </div>
                 <div className=" py-10 flex items-center justify-between">
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 hover:underline" onClick={scrollToTop}>
                         <FaArrowUpLong />
                         <p>Back to top</p>
                     </div>

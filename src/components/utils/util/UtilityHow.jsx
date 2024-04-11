@@ -3,9 +3,11 @@ import { GiTakeMyMoney } from "react-icons/gi";
 import { AiOutlineSafety } from "react-icons/ai";
 import { useState } from "react";
 import { BsClockHistory } from "react-icons/bs";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
 
-export function Utilityhome() {
+
+export function UtilityHow() {
     const [showHidden, setShowHidden] = useState(true)
     const [showHidden2, setShowHidden2] = useState(true)
     const [showHidden3, setShowHidden3] = useState(true)
@@ -22,61 +24,47 @@ export function Utilityhome() {
 
     return (
         <>
-            <div className=" w-full px-5 select-none">
-                <div className="flex flex-col bg-slate-100 border-2 rounded-lg">
-                    <div className="flex items-center py-8 border-b-2 px-5 flex-col gap-5 text-dark" onClick={handleShowHidden}>
+            <div className=" w-full select-none">
+                <div className="flex flex-col">
+                    <div className="flex items-center py-4 border-b-2 px-5 flex-col gap-5 text-dark" onClick={handleShowHidden}>
                         <div className="flex items-center justify-between w-full">
-                            <div className="flex items-center gap-2">
-                                <GiTakeMyMoney className="text-2xl" />
-                                <p>Money back guarantee</p>
+                            <div className="flex items-center gap-2 font-medium">
+                                <p>Why do you not show cars from all of the dealers?</p>
                             </div>
-                            <FaCirclePlus className={showHidden ? 'text-secondary block' : 'hidden'} />
-                            <FaCircleMinus className={showHidden ? 'hidden' : 'text-secondary block'} />
+                            <MdKeyboardArrowDown className={showHidden ? 'text-secondary block text-2xl' : 'hidden'} />
+                            <MdKeyboardArrowUp className={showHidden ? 'hidden' : 'text-secondary block text-2xl'} />
                         </div>
 
-                        <div className={showHidden ? 'hidden' : 'border-t-2 pt-3 flex flex-col gap-3'}>
-                            <h1 className="font-bold">
-                                Can I really return the car?
-                            </h1>
-                            <p>Of course, you can. We trust our service and know that we only sell inspected vehicles in excellent technical condition. Together with our customers we are fighting for better vehicles on roads. Carvago, therefore, always assumes all risks connected with the vehicle. And if you simply don’t like the car, you can return it to us up to 14 days after receiving it.</p>
+                        <div className={showHidden ? 'hidden' : 'flex flex-col'}>
+                            <p>We only work with tried and tested dealers and only select cars which meet strict criteria. From 7 million adverts, we only recommend 1 000 000 cars for purchase, which is however still 10x more than the number of cars on offer in the Czech Republic. In addition to that, each vehicle must pass a thorough technical inspection consisting of more than 270 parameters before it can be sold. You will receive the result of the entire inspection and photo documentation together with our recommendation in advance.</p>
                         </div>
                     </div>
 
-                    <div className="flex items-center py-8 px-5 flex-col gap-5 text-dark" onClick={handleShowHidden2}>
+                    <div className="flex items-center py-4 px-5 flex-col gap-5 text-dark" onClick={handleShowHidden2}>
                         <div className="flex items-center justify-between w-full">
                             <div className="flex items-center gap-2">
-                                <AiOutlineSafety className="text-2xl" />
-                                <p>Safe purchase</p>
+                                <p>Do you sell only vetted cars?</p>
                             </div>
-                            <FaCirclePlus className={showHidden2 ? 'text-secondary block' : 'hidden'} />
-                            <FaCircleMinus className={showHidden2 ? 'hidden' : 'text-secondary block'} />
+                            <MdKeyboardArrowDown className={showHidden ? 'text-secondary block text-2xl' : 'hidden'} />
+                            <MdKeyboardArrowUp className={showHidden ? 'hidden' : 'text-secondary block text-2xl'} />
                         </div>
 
-                        <div className={showHidden2 ? 'hidden' : 'border-t-2 flex flex-col gap-3 pt-3'}>
-                            <h1 className="font-bold">
-                                You don't risk anything buying
-                            </h1>
-                            <p>Carvago is the safest way of buying a used car. Before each purchase we first of all carefully examine the chosen car and you then decide on the basis of its current condition and our recommendation.
-                                You always sign the contract with Carvago, so all guarantees are provided by us - you only need to buy the car, in your native language.
-                                Wherever the car is from, you always make the payment to a local account in your local curency.</p>
+                        <div className={showHidden2 ? 'hidden' : 'flex'}>
+                            <p>Each vehicle must pass a thorough technical inspection consisting of more than 270 parameters before it can be sold. In addition to this, Carvago becomes the owner of the car before it is delivered to the customer and assumes all risks associated with the vehicle. And if there is any problem, you can return the car to us at any time within 14 days of purchase.</p>
                         </div>
                     </div>
 
-                    <div className="flex items-center py-8 border-t-2 px-5 flex-col gap-5 text-dark" onClick={handleShowHidden3}>
+                    <div className="flex items-center py-4 border-t-2 px-5 flex-col gap-5 text-dark border-b-2" onClick={handleShowHidden3}>
                         <div className="flex items-center justify-between w-full">
-                            <div className="flex items-center gap-2">
-                                <BsClockHistory className="text-2xl" />
-                                <p>6 month warranty</p>
+                            <div>
+                                <p>Where do the cars in your offer come from?</p>
                             </div>
-                            <FaCirclePlus className={showHidden3 ? 'text-secondary block' : 'hidden'} />
-                            <FaCircleMinus className={showHidden3 ? 'hidden' : 'text-secondary block'} />
+                            <MdKeyboardArrowDown className={showHidden ? 'text-secondary block text-2xl' : 'hidden'} />
+                            <MdKeyboardArrowUp className={showHidden ? 'hidden' : 'text-secondary block text-2xl'} />
                         </div>
 
-                        <div className={showHidden3 ? 'hidden' : 'border-t-2 flex flex-col gap-3 pt-3'}>
-                            <h1 className="font-bold">
-                                You receive an extended warranty on the car
-                            </h1>
-                            <p>For even greater peace of mind, aside from the warranty for hidden defects, you also have from us an extended 6-month warranty on the essentials - the engine, gearbox and differential. If you want even more, you can choose a longer period of coverage for other parts of the vehicle in the order.</p>
+                        <div className={showHidden3 ? 'hidden' : 'flex'}>
+                            <p>The size of the offer often determines whether or not you find the car you are looking for. So far, customers in the Czech Republic have been able to choose from 70,000 cars. However, Carvago offers more than 1 000 000. And each car is just as close as the next - one click away. And since you are buying the car from us, communication is always only in Czech, regardless where the car is located. We will take care of any language and legal issues. If you're looking for a 2017 Volkswagen Golf with a diesel engine and a mileage of at most 50,000 kilometers, you will find about 10 of them for sale in the Czech Republic. You will find at least 153 cars with these parameters at Carvago. And a lot of them at a better price, with better equipment or better looking.</p>
                         </div>
                     </div>
                 </div>
@@ -88,7 +76,7 @@ export function Utilityhome() {
 // Mobile End
 
 // Desktop
-export default function UtilityHomeXL() {
+export default function UtilityHowXL() {
     const [isHovered, setIsHovered] = useState(null)
 
     return (
